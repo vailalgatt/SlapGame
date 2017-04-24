@@ -1,0 +1,61 @@
+/*Only use this file if you want to override bootstrap or create your own style*/
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #262626;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Exo 2', sans-serif;
+  color: #262626;
+  font-size: 35px;
+  font-weight: 50;
+}
+
+.actionResponse {
+    background-image: url(dirt.png);
+    opacity: 0.9;
+    border-radius: 5px;
+    position: relative;
+    height: 270px;
+    width: 270px;
+    display: none;
+}
+
+.actionResponse1 {
+    background-image: url(metal-detector.png);
+    opacity: 0.9;
+    border-radius: 5px;
+    position: relative;
+    height: 270px;
+    width: 270px;
+    display: none;
+}
+
+.actionResponse2 {
+    background-image: url(broom.png);
+    opacity: 0.9;
+    border-radius: 5px;
+    position: relative;
+    height: 270px;
+    width: 270px;
+    display: none;
+}
+
+.actionResponse3 {
+    background-image: url(gold.png);
+    opacity: 0.9;
+    border-radius: 5px;
+    position: relative;
+    height: 270px;
+    width: 270px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

@@ -1,12 +1,52 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-	<title>Slap Object Game</title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
-	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles/game.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:200|Josefin+Sans" rel="stylesheet">
+	<title>Treasure Hunt</title>
 </head>
+
 <body>
-	
-	<script src=""></script>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="slapGameHeader">
+					<h1 class="text-center">El Dorado</h1>
+					<h2 class="text-center">Discover the hidden gold of El Dorado</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div style="text-align: center"> <img id="elDorado" class="elDorado" src="imgs/defaultIMG.jpg" alt="elDorado" height="400" width="400WS" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="health"><span>Attempts:<span id="health">--</span></span>
+				</h1>
+					<h2 id="victory"></h2>
+				</div>
+			</div>
+			<footer>
+				<div class="col-xs-12">
+					<div class="row text-center">
+						<h4 class="optionsHeader">Chose an action</h4>
+						<button type="button" id="dig" onclick="dig()">Dig</button>        
+						<button type="button" id="metalDetector" onclick="metalDetector()">Metal Detector</button>
+						<button type="button" id="sweep" onclick="sweep()">Sweep</button>
+						<button type="button" id="reset" onclick="reset()">reset</button>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="game.js"></script>
 </body>
+
 </html>

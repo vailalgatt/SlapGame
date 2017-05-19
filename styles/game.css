@@ -1,61 +1,66 @@
 /*Only use this file if you want to override bootstrap or create your own style*/
-h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  color: #262626;
-  font-size: 50px;
+body {
+    background-image: url("elDoradoBG.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
 }
 
-h2 {
+.slapGameHeader{
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    text-decoration-style: double;
+    background: goldenrod;
+    color: white;
+    font-weight: bolder;
+}
+
+
+#health {
   font-family: 'Exo 2', sans-serif;
-  color: #262626;
-  font-size: 35px;
-  font-weight: 50;
+  color:red;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 50px
 }
 
-.actionResponse {
-    background-image: url(dirt.png);
-    opacity: 0.9;
-    border-radius: 5px;
-    position: relative;
-    height: 270px;
-    width: 270px;
-    display: none;
+#actions {
+    font-family: 'Exo 2', sans-serif;
+    color: red;
+    margin: 25px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.actionResponse1 {
-    background-image: url(metal-detector.png);
-    opacity: 0.9;
-    border-radius: 5px;
-    position: relative;
-    height: 270px;
-    width: 270px;
-    display: none;
+#resetTxt {
+    color: goldenrod;
+    margin: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.actionResponse2 {
-    background-image: url(broom.png);
-    opacity: 0.9;
-    border-radius: 5px;
-    position: relative;
-    height: 270px;
-    width: 270px;
-    display: none;
+#mods {
+    color: blue;
+    margin: 25px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.actionResponse3 {
-    background-image: url(gold.png);
-    opacity: 0.9;
-    border-radius: 5px;
-    position: relative;
-    height: 270px;
-    width: 270px;
-    display: none;
-}
 
-.hidden {
-    display: none;
-}
 
-.visible {
-    display: block;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+

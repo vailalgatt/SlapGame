@@ -1,4 +1,3 @@
-
 //controller 
 function GameController() {
     var gameService = new GameService()
@@ -32,9 +31,17 @@ function GameController() {
         document.getElementById("victory").innerText = ""
         drawGame()
     }
+    
+    this.water = function(){
+        gameService.activate("water")
+        drawGame()
+    }
 
+       this.shovel = function(){
+        gameService.activate("shovel")
+        drawGame()
+    }
+    
 
     drawGame()
 }
-
-

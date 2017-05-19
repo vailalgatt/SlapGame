@@ -21,36 +21,49 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<div style="text-align: center"> <img id="elDorado" class="elDorado" src="imgs/defaultIMG.jpg" alt="elDorado" height="400" width="400WS" />
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="row text-center">
 				<h1 id="health"><span>Attempts:<span id="health">--</span></span>
 				</h1>
-					<h2 id="victory"></h2>
+				<h2 id="victory"></h2>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="col-xs-4">
+			<div class="row text-center">
+				<div class="well">
+					<h4 id="actions">Chose an action</h4>
+					<button type="button" id="dig" onclick="app.controllers.gameController.dig()">Dig</button>
+					<button type="button" id="metalDetector" onclick="app.controllers.gameController.metalDetector()">Metal Detector</button>
+					<button type="button" id="sweep" onclick="app.controllers.gameController.sweep()">Sweep</button>
 				</div>
 			</div>
-			<footer>
-				<div class="col-xs-12">
-					<div class="row text-center">
-						<h4 class="optionsHeader">Chose an action</h4>
-						<button type="button" id="dig" onclick="app.controllers.gameController.dig()">Dig</button>        
-						<button type="button" id="metalDetector" onclick="app.controllers.gameController.metalDetector()">Metal Detector</button>
-						<button type="button" id="sweep" onclick="app.controllers.gameController.sweep()">Sweep</button>
-						<button type="button" id="reset" onclick="app.controllers.gameController.reset()">reset</button>
-					</div>
-				</div>
-			</footer>
 		</div>
-		<script src="script/service.js"></script>
-		<script src="script/controller.js"></script>
-		<script src="script/app.js"></script>
+		<div class="col-xs-4">
+			<div class="row text-center">
+				<div class="well">
+					<h4 id="resetTxt">Try Again</h4>
+					<button type="button" id="reset" onclick="app.controllers.gameController.reset()">reset</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="row text-center">
+				<div class="well">
+					<h4 id="mods">Mods</h4>
+					<button type="button" id="water" onclick="app.controllers.gameController.water()">Water</button>
+					<button type="button" id="shovel" onclick="app.controllers.gameController.shovel()">Shovel</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<script src="script/service.js"></script>
+	<script src="script/controller.js"></script>
+	<script src="script/app.js"></script>
 </body>
 
 </html>
-
-

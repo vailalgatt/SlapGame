@@ -15,30 +15,33 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="slapGameHeader">
+				<div class="digGameHeader">
 					<h1 class="text-center">El Dorado</h1>
 					<h2 class="text-center">Discover the hidden gold of El Dorado</h2>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="row text-center">
-				<h1 id="health"><span>Attempts:<span id="health">--</span></span>
-				</h1>
-				<h2 id="victory"></h2>
-			</div>
-		</div>
-	</div>
 	<footer>
 		<div class="col-xs-4">
-			<div class="row text-center">
-				<div class="well">
+			<div class="well">
+				<div class="row text-center">
+					<img class="target" src="styles/player1.png" alt="default" height="150px" width="150px">
 					<h4 id="actions">Chose an action</h4>
-					<button type="button" id="dig" onclick="app.controllers.gameController.dig()">Dig</button>
-					<button type="button" id="metalDetector" onclick="app.controllers.gameController.metalDetector()">Metal Detector</button>
-					<button type="button" id="sweep" onclick="app.controllers.gameController.sweep()">Sweep</button>
+					<button type="button" id="dig" onclick="app.controllers.gameController.onAttackClick('player1', 'dig')">Dig</button>
+					<button type="button" id="metalDetector" onclick="app.controllers.gameController.onAttackClick('player1', 'metalDetector')">Metal Detector</button>
+					<button type="button" id="sweep" onclick="app.controllers.gameController.onAttackClick('player1','sweep')">Sweep</button>
+				</div>
+				<div class="row text-center">
+					<h4 id="mods">Mods</h4>
+					<button type="button" id="water" onclick="app.controllers.gameController.giveItem('player1', 'water')">Water</button>
+					<button type="button" id="heal" onclick="app.controllers.gameController.giveItem('player1', 'heal')">Heal</button>
+					<button type="button" id="shovel" onclick="app.controllers.gameController.giveItem('player1', 'shovel')">Shovel</button>
+				</div>
+				<div class="targetImage text-center">
+					<h1 id="name"></h1>
+					<h3>Health:<span id="healthBar">100</span></h3>
+					<h3>Hits:<span id="hits">0</span></h3>
 				</div>
 			</div>
 		</div>
@@ -51,13 +54,28 @@
 			</div>
 		</div>
 		<div class="col-xs-4">
-			<div class="row text-center">
-				<div class="well">
+			<div class="well">
+				<div class="row text-center">
+					<img src="styles/pirateCaptain.png" alt="default" height="150px" width="150px">
+					<h4 id="actions">Chose an action</h4>
+					<button type="button" id="dig" onclick="app.controllers.gameController.onAttackClick('player2', 'dig')">Dig</button>
+					<button type="button" id="metalDetector" onclick="app.controllers.gameController.onAttackClick('player2', 'metalDetector')">Metal Detector</button>
+					<button type="button" id="sweep" onclick="app.controllers.gameController.onAttackClick('player2', 'sweep')">Sweep</button>
+				</div>
+				<div class="row text-center">
 					<h4 id="mods">Mods</h4>
-					<button type="button" id="water" onclick="app.controllers.gameController.water()">Water</button>
-					<button type="button" id="shovel" onclick="app.controllers.gameController.shovel()">Shovel</button>
+					<button type="button" id="water" onclick="app.controllers.gameController.giveItem('player2', 'water')">Water</button>
+					<button type="button" id="heal" onclick="app.controllers.gameController.giveItem('player2', 'heal')">Heal</button>
+					<button type="button" id="shovel" onclick="app.controllers.gameController.giveItem('player3', 'shovel')">Shovel</button>
+				</div>
+				<div class="targetImage text-center">
+					<h1 id="name"></h1>
+					<h3>Health:<span id="healthBar">100</span></h3>
+					<h3>Hits:<span id="hits">0</span></h3>
 				</div>
 			</div>
+		</div>
+		</div>
 		</div>
 	</footer>
 	</div>

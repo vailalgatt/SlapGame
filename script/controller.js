@@ -58,11 +58,11 @@ function GameController() {
   }
 
 function update(target) {
-  if(target.name=="The player1"){
+  if(target.name=="player1"){
    document.getElementById('healthBar').innerHTML = target.health;
    document.getElementById('hits').innerHTML = target.hits  
   }
-  else if(target.name=="Peanut"){
+  else if(target.name=="player2"){
     document.getElementById('healthBarTwo').innerHTML = target.health;
    document.getElementById('hitsTwo').innerHTML = target.hits
   } 
@@ -71,5 +71,5 @@ function update(target) {
 this.giveItem = function getItem(targetName, itemName){
   service.processItem(targetName, itemName)
 }
-
+//update()
 }

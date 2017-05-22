@@ -33,12 +33,12 @@ body {
     font-size: 25px;
 }
 
-#resetTxt {
+.digGameHeader {
     color: goldenrod;
     margin: 25px;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: bolder;
+    font-size: 75px;
 }
 
 #mods {
@@ -48,6 +48,8 @@ body {
     font-weight: bold;
     font-size: 25px;
 }
+
+
 
 
 

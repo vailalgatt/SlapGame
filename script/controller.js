@@ -10,7 +10,7 @@
 //         document.getElementById("health").innerText = health
 //     }
 
-    
+
 //     this.dig = function() {
 //         gameService.modifyHealth("dig")
 //         drawGame()    
@@ -31,7 +31,7 @@
 //         document.getElementById("victory").innerText = ""
 //         drawGame()
 //     }
-    
+
 //     this.water = function(){
 //         gameService.activate("water")
 //         drawGame()
@@ -41,7 +41,7 @@
 //         gameService.activate("shovel")
 //         drawGame()
 //     }
-    
+
 
 //     drawGame()
 // }
@@ -57,19 +57,23 @@ function GameController() {
 
   }
 
-function update(target) {
-  if(target.name=="player1"){
-   document.getElementById('healthBar').innerHTML = target.health;
-   document.getElementById('hits').innerHTML = target.hits  
+  function update(target) {
+    if (target.health <= 0) {
+      document.getElementById("victory").innerText = "You have found the gold of El Dorado"
+    }
+    else if (target.name == "player1") {
+      document.getElementById('healthBar').innerHTML = target.health;
+      document.getElementById('hits').innerHTML = target.hits
+    }
+    else if (target.name == "player2") {
+      document.getElementById('healthBarTwo').innerHTML = target.health;
+      document.getElementById('hitsTwo').innerHTML = target.hits
+    }
   }
-  else if(target.name=="player2"){
-    document.getElementById('healthBarTwo').innerHTML = target.health;
-   document.getElementById('hitsTwo').innerHTML = target.hits
-  } 
- }
 
-this.giveItem = function getItem(targetName, itemName){
-  service.processItem(targetName, itemName)
-}
-//update()
+  this.giveItem = function getItem(targetName, itemName) {
+    service.processItem(targetName, itemName)
+  }
+
+  //update()
 }

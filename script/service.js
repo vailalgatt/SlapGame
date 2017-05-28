@@ -95,6 +95,13 @@ function GameService() {
       var totalMod = calcMods(target)
       target.health -= target[type] * totalMod
       target.hits ++
+
+      if(target.health <= 0 ){
+        target.health = 0
+      }
+      if(target.health > 100){
+        target.health = 100
+      }
     }
 
     function calcMods(target){
